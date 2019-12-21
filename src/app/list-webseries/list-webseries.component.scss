@@ -1,0 +1,28 @@
+.list-content{
+    border: 1px solid #000;
+    .list-search{
+       input{
+           border-radius: 5px;
+           padding: 0 5px;
+
+           &:active,
+           &:focus{
+               box-shadow: none !important;
+               outline: none !important;
+           }
+       }
+    }
+
+    .list-wrapper{
+        .list-heading{
+        }
+        .list{
+            list-style: none !important;
+            .list-item{
+                border: 1px solid #000;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

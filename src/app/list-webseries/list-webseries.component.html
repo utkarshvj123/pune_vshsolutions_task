@@ -1,0 +1,16 @@
+<div class="list-content m-5">
+<div class="d-flex justify-content-end list-search p-3">
+    <input type="text" placeholder="Search" [(ngModel)]="valueFromInput" (input)="valuechange($event)">
+</div>
+<div class="list-wrapper m-3">
+    <div class="list-heading py-3 text-center">List of Web Series</div>
+    <div>
+        <ul class="list">
+          
+            <li *ngFor="let webSeries of listWebSeries; let i = index" (click)="selectedValue(webSeries)" class="list-item px-3 py-1">
+               {{i+1 }}{{"."}} {{webSeries.name}}
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
